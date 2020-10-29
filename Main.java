@@ -1,5 +1,24 @@
 import java.util.Random;  
 
+/*
+Properties
+	• Structural design pattern
+	• Used when we need to create many Objects of a class. We use it to reduce creation of Object.
+	• Intrinsic Properties: Which are same for a Object.
+	• Extrinsic Properties: Which are different for a Object.
+	
+Implementation
+	• Interface: Which contain common method - Employee
+	• Object: Individual Class - Developer, Tester
+	• Intrinsic Property
+		○ Developer - Fixes the issue
+		○ Tester - Test the issue
+	• Extrinsic Property - Skills
+	• We use Factory to return Object - EmployeeFactory
+	• Client - Client Class
+	• We will assign issues as per skills.
+*/
+
 class Main {
 	private static String employeeType[] = {"Developer", "Tester"};
 	private static String skills[] = {"Java", "C++", ".Net", "Python"};
